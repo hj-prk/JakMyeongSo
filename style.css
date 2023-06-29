@@ -4,6 +4,8 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: cursive;
+    background: url("image/bg.jpg") no-repeat center;
+    background-size: cover;
 }
 #top img{
     position:fixed;
@@ -52,5 +54,6 @@ span {
 }
 fieldset {
     padding: 20px 40px;
-    background-color: snow;
+    background-color: rgba(251, 249, 249, 0.8);
+    
 }
