@@ -5,6 +5,11 @@ body {
     height: 100vh;
     font-family: cursive;
 }
+#top img{
+    position:fixed;
+    top:0;
+    left:10px;
+}
 input,
 textarea {
     width: 100%;
