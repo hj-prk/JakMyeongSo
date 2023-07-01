@@ -1,0 +1,19 @@
+(Naming for variables were omitted or simplified)
+
+
+1.Takes information of gender from user.
+2. Generates three random integers. (n, m, & k)
+3. Takes information at nth, mth, and kth information from three json files.
+4. Compares three letters. If any of them duplicates, takes another input.
+5. Combines three letters into one.
+6. Shows the result in Korean and English to the user.
+7. Asks the user if the user wants to see its meaning, translation in simplified/traditional Chinese or Japanese. 
+8. Shows the chosen information to user.
+9. Goes back to #1 when user clicks "Go Back" button. 
+
+
+
+A json file includes following data: A letter in Korean, its prnounciation in English, its pronounciation in Japanese, its translation in simplified Chinese and its translation in traditional Chinese. Two json files for names also include each letter's meaning as well.
+
+Each json file includes same type of data. Each of them represents a surname and first and second letter of a name. 
+These data files were designed based on understanding of the Korean naming system identifying suitable and natural-sounding letters for each position. 
