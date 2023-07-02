@@ -1,0 +1,56 @@
+{
+    "surname": [
+        {
+            "kor":"김",
+            "eng":"Kim",
+            "jap":"キム",
+            "schn":"金",
+            "tchn":"金"
+        },
+        {
+            "kor":"이",
+            "eng":"Lee",
+            "jap":"イ",
+            "schn":"李",
+            "tchn":"李"
+        }
+    ],
+    
+    "f_first": [
+        {
+            "kor":"수",
+            "eng":"Soo",
+            "jap":"ス",
+            "schn":"",
+            "tchn":"秀",
+            "mean":"Outstanding"
+        },
+        {
+            "kor":"현",
+            "eng":"Hyun",
+            "jap":"ヒョン",
+            "schn":"贤",
+            "tchn":"賢",
+            "mean":"Clever"
+        }
+    ],
+
+    "f_second": [
+        {
+            "kor":"진",
+            "eng":"Jin",
+            "jap":"ジン",
+            "schn":"真",
+            "tchn":"眞",
+            "mean":"honest"
+        },
+        {
+            "kor":"정",
+            "eng":"Jeong",
+            "jap":"ジョン",
+            "schn":"淨",
+            "tchn":"净",
+            "mean":"clean"
+        }
+    ]
+}
