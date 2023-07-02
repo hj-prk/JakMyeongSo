@@ -19,5 +19,6 @@ form.addEventListener("submit", (e) => {
     }
 });
 
-console.log(genderval); //test
+//console.log(genderval); //test
 
+import data from ''
