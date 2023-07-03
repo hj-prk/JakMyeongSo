@@ -32,51 +32,52 @@ const msLength = msLines.length;
 
 let firstLetter="null";
 let secondLetter="null";
+let surnameMade="null";
 
-var repeated = false;
+var standard = false;
 
-while(true) {
-    let randSurNum = Math.floor(Math.random()*(surLength-0));
-    let randFfNum = Math.floor(Math.random()*(ffLength-0));
-    let randFsNum = Math.floor(Math.random()*(fsLength-0));
-    let randMfNum = Math.floor(Math.random()*(mfLength-0));
-    let randMsNum = Math.floor(Math.random()*(msLength-0));
 
-    //console.log(JSON.parse(surLines[randSurNum]).kor);
+    let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
+    let randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
+    let randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
+    let randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
+    let randMsNum = Math.floor(Math.random()*(msLength-0)+0);
 
     let genderval;
 
-    let surnameMade = JSON.parse(surLines[randSurNum]);
+    surnameMade = JSON.parse(surLines[randSurNum]);
 
     const form = document.getElementById("radioform");
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         genderval = document.querySelector('input[name="gender"]:checked').value;
-        if (genderval === "female") {
-            console.log("Female");
-            firstLetter = JSON.parse(ffLines[randFfNum]);
-            secondLetter = JSON.parse(fsLines[randFsNum]);
-        } else {
-            console.log("Male");
-            firstLetter = JSON.parse(mfLines[randMfNum]);
-            secondLetter = JSON.parse(msLines[randMsNum]);
+
+        while(!standard) {
+            if (genderval === "female") {
+                console.log("Female");
+                firstLetter = JSON.parse(ffLines[randFfNum]);
+                secondLetter = JSON.parse(fsLines[randFsNum]);
+            } else {
+                console.log("Male");
+                firstLetter = JSON.parse(mfLines[randMfNum]);
+                secondLetter = JSON.parse(msLines[randMsNum]);
+            }
+
+            if(surnameMade.eng != firstLetter.eng && surnameMade != secondLetter && firstLetter != secondLetter) {
+                standard = true;
+            } else {
+                standard = false;
+            }
+            var engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
+            console.log(engName);
         }
     });
-    if(surnameMade.eng != firstLetter.eng && surnameMade != secondLetter && firstLetter != secondLetter) {
-        repeated = true;
-    } else {
-        repeated = false;
-    }
+    
 
-    if(!repeated) {
-        break;
-    }
-}
 
-var engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
 
-console.log(engName);
+
 
 /*
 Later to be used to use data from seperate .json file for further enhancement.
