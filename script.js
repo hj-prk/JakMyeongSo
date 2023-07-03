@@ -70,7 +70,15 @@ var standard = false;
                 standard = false;
             }
             var engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
+            var korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
+            var japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
+            var schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
+            var tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
             console.log(engName);
+            console.log(korName);
+            console.log(japName);
+            console.log(schnName);
+            console.log(tchnName);
         }
     });
     
