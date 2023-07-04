@@ -146,11 +146,17 @@ var standard = false;
             var japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
             var schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
             var tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
+            var meaning = firstLetter.mean + " " + secondLetter.mean;
+
             console.log(engName);
             console.log(korName);
             console.log(japName);
             console.log(schnName);
             console.log(tchnName);
+            console.log(meaning);
+
+            document.getElementById("nameKor").innerHTML = korName;
+            document.getElementById("nameEng").innerHTML = engName;
         }
     });
     

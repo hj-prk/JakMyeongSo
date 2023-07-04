@@ -57,3 +57,19 @@ fieldset {
     background-color: rgba(251, 249, 249, 0.8);
     
 }
+#resultBox {
+    padding: 20px 40px;
+    background-color: rgba(251, 249, 249, 0.8);
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid gray;
+    width: 9.8em;
+    height: 4em;
+    position:absolute;
+    top: 580px;
+    left: auto;
+    text-align: center;
+}
+#nameKor {
+    font-family:Arial;
+}
