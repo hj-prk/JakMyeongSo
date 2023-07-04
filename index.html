@@ -6,33 +6,54 @@
 
     <body>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <div id="top">
-            <img src="image/jakmyeongso.png">
+        <div class="nav" alt="">
+            <div class="logo">
+                <img src="image/jakmyeongso.png">
+            </div> 
         </div>
-        <div>
-            <form id="radioform">
-                <fieldset>
-                    <legend>Jakmyeongso</legend>
-                    <div class="mainbox">
-                        <label for="gender"><strong>Gender</strong></label><br> 
-                    </div>
+        
+        <section class="header">
+            <div class="title">
+                <h1>JAKMYEONGSO</h1>
+                <p>Get a creative Korean name in a second! Click the button and get your own name.</p>
+                <button>Get started</button>
+            </div>
+        </section>
 
-                    <div id="optionbox">
-                        <input type="radio" id="female" name="gender" value="female" /> Female
-                        <input type="radio" id="male" name="gender" value="male" /> Male
-                    </div> 
-                    <input type="submit" value="Get a name" class="submit-btn" />
-                </fieldset>
-            </form>
-        </div><br>
-        <div id="resultBox">
-            <div id="nameKor">
-                <h5></h5>
+        <section class="inputSec">
+            <div class="card"></div>
+            <div class="card">
+                <div id="inputBox">
+                <form id="radioform">
+                    <fieldset>
+                        <legend>Jakmyeongso</legend>
+                        <div class="mainbox">
+                            <label for="gender"><strong>Gender</strong></label><br> 
+                        </div>
+
+                        <div id="optionbox">
+                            <input type="radio" id="female" name="gender" value="female" /> Female
+                            <input type="radio" id="male" name="gender" value="male" /> Male
+                        </div> 
+                        <input type="submit" value="Get a name" class="submit-btn" />
+                    </fieldset>
+                </form>
+            </div><br>
+            <div id="resultBox">
+                <div id="nameKor">
+                    <h5></h5>
+                </div>
+                <div id="nameEng">
+                    <h5></h5>
+                </div>
             </div>
-            <div id="nameEng">
-                <h5></h5>
             </div>
-        </div>
+            
+            <div class="card"></div>
+        </section>
+
+        
+        
     </body>
     <script src="script.js" charset="utf-8"></script>
 </html>

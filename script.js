@@ -5,7 +5,7 @@ Note: Below json objects were initially designed to be stored in a seperate .jso
  */
 const surname = '{"kor":"김", "eng":"Kim", "jap":"キム", "schn":"金","tchn":"金"}\n'
 +'{"kor":"박", "eng":"Park", "jap":"パク", "schn":"朴", "tchn":"朴"}\n'
-+'{"kor":"최", "eng":"Choi", "jap":チェ", "schn":"崔", "tchn":"崔"}\n'
++'{"kor":"최", "eng":"Choi", "jap":"チェ", "schn":"崔", "tchn":"崔"}\n'
 +'{"kor":"정", "eng":"Jeong",  "jap":"ジョン", "schn":"淨", "tchn":"净"}\n'
 +'{"kor":"남", "eng":"Nam", "jap":"ナム", "schn":"南", "tchn":"南"}\n'
 +'{"kor":"손", "eng":"Son", "jap":"ソン", "schn":"孙", "tchn":"孫"}\n'
