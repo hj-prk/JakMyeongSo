@@ -85,6 +85,8 @@ const m_first = '{"kor":"석", "eng":"Seok", "jap":"ソク", "schn":"石", "tchn
 const m_second = '{"kor":"주", "eng":"Joo", "jap":"ジュ", "schn":"柱", "tchn":"柱", "mean":"pillar"}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"honest"}';
 
+
+
 var korName = "";
 var engName = "";
 var schnName = "";
@@ -97,20 +99,15 @@ let fsLines = f_second.split("\n");
 let mfLines = m_first.split("\n");
 let msLines = m_second.split("\n");
 
-//var obj = JSON.parse(surLines[0]);
-//console.log(obj.kor);
-
 const surLength = surLines.length;
 const ffLength = ffLines.length;
 const fsLength = fsLines.length;
 const mfLength = mfLines.length;
 const msLength = msLines.length;
 
-let firstLetter="null";
-let secondLetter="null";
-let surnameMade="null";
-
-
+let firstLetter="";
+let secondLetter="";
+let surnameMade="";
 
 let genderval;
 
@@ -118,9 +115,8 @@ const form = document.getElementById("radioform");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    genderval = document.querySelector('input[name="gender"]:checked').value;
 
-    var standard = false;
+    genderval = document.querySelector('input[name="gender"]:checked').value;
 
     //Generates random numbers and pick up data at the location of chosen number.
     let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
@@ -182,6 +178,11 @@ form.addEventListener("submit", (e) => {
     console.log(schnName);
     console.log(tchnName);
     console.log(meaning);
+    console.log("surLength: " + surLength);
+    console.log("ffLength: " + ffLength);
+    console.log("fsLength: " + fsLength);
+    console.log("mfLength: " + mfLength);
+    console.log("msLength: " + msLength); 
 });
 
     
