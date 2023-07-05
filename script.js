@@ -85,8 +85,18 @@ const m_first = '{"kor":"석", "eng":"Seok", "jap":"ソク", "schn":"石", "tchn
 const m_second = '{"kor":"주", "eng":"Joo", "jap":"ジュ", "schn":"柱", "tchn":"柱", "mean":"pillar"}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"honest"}';
 
-
-
+document.getElementById("transEng").onclick = function() {
+    document.getElementById("guideImage").src = "./image/guide_eng.jpg";
+}
+document.getElementById("transKor").onclick = function() {
+    document.getElementById("guideImage").src = "./image/guide_kor.jpg";
+}
+document.getElementById("transJap").onclick = function() {
+    document.getElementById("guideImage").src = "./image/guide_jap.jpg";
+}
+document.getElementById("transChn").onclick = function() {
+    document.getElementById("guideImage").src = "./image/guide_chn.jpg";
+}
 var korName = "";
 var engName = "";
 var schnName = "";
