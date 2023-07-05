@@ -166,6 +166,9 @@ var standard = false;
             document.getElementById("secondLine").innerHTML = engName;
             
             //Shows the name in the selected language. The name in English disappears.
+            document.getElementById("showEng").onclick = function() {
+                document.getElementById("secondLine").innerHTML = engName;
+            }
             document.getElementById("showJap").onclick = function() {
                 document.getElementById("secondLine").innerHTML = japName;
             }
