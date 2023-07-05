@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: cursive;
+    font-family: Arial;
 }
 .nav {
     height: 5vw;
@@ -35,6 +35,7 @@ body {
 }
 .header .title {
     text-align: center;
+    font-family: cursive;
 }
 .header .title h1 {
     font-size: 5vw;
@@ -43,8 +44,8 @@ body {
     margin-bottom: 0;
 }
 .header .title p {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     color: white;
     font-family:'Courier New';
     font-size: 1vw;
@@ -75,21 +76,43 @@ label {
 }
 .inputSec {
     display: flex;
-    width: 85%;
+    width: 100%;
     justify-content: center;
-    margin: 220px;
+    height: 400px;
+    margin-top: 300px;
 }
 .inputSec .card {
+    position: absolute;
     flex: 1;
-    margin: 300px 0;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
+    align-items: flex-end;
+    background-color: transparent;
+}
+fieldset {
+    width: 12vw;
+    padding: 20px 40px;
+    background-color: rgba(251, 249, 249, 0.8);
+}
+#resultBox {
+    padding: 20px 40px;
+    background-color: rgba(251, 249, 249, 0.8);
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid gray;
+    width: 12vw;
+    height: 3.5vw;
+    text-align: center;
+}
+#nameKor {
+    font-family:Arial;
 }
 input[type="submit"] {
     transform: translate(2.2%);
     padding: 3px;
     margin-top: 0.6rem;
-    font-family: cursive;
-    font-weight: bold;
+    font-family:Arial;
 }
 [type="radio"],
 span {
@@ -115,21 +138,28 @@ span {
 [type="radio"]:hover + span {
     cursor: pointer;
 }
-fieldset {
-    width: 12em;
-    padding: 20px 40px;
-    background-color: rgba(251, 249, 249, 0.8);
+.buttonSec {
+    position: absolute;
+    display: flex;
+    width: 99%;
+    justify-content: center;
+    align-items:flex-start;
+    height: 200px;
 }
-#resultBox {
-    padding: 20px 40px;
-    background-color: rgba(251, 249, 249, 0.8);
-    vertical-align: middle;
-    appearance: none;
-    border: max(2px, 0.1em) solid gray;
-    width: 12em;
-    height: 3.5em;
+.buttonSec button {
+    width:150px;
+    height:80px;
     text-align: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-family: Arial;
 }
-#nameKor {
-    font-family:Arial;
+.buttonSec button:hover {
+    transition: .5s ease;
+    border: 1px solid rgb(37, 37, 37);
+    color: rgb(56, 56, 56);
 }
+
