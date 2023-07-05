@@ -85,7 +85,11 @@ const m_first = '{"kor":"석", "eng":"Seok", "jap":"ソク", "schn":"石", "tchn
 const m_second = '{"kor":"주", "eng":"Joo", "jap":"ジュ", "schn":"柱", "tchn":"柱", "mean":"pillar"}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"honest"}';
 
-
+var korName = "";
+var engName = "";
+var schnName = "";
+var tchnName = "";
+var meaning = "";
 
 let surLines = surname.split("\n");
 let ffLines = f_first.split("\n");
@@ -141,12 +145,14 @@ var standard = false;
             } else {
                 standard = false;
             }
-            var engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
-            var korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
-            var japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
-            var schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
-            var tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
-            var meaning = firstLetter.mean + " " + secondLetter.mean;
+
+            //Combines letters
+            engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
+            korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
+            japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
+            schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
+            tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
+            meaning = firstLetter.mean + " " + secondLetter.mean;
 
             console.log(engName);
             console.log(korName);
@@ -155,10 +161,26 @@ var standard = false;
             console.log(tchnName);
             console.log(meaning);
 
-            document.getElementById("nameKor").innerHTML = korName;
-            document.getElementById("nameEng").innerHTML = engName;
+            //Shows the name generated in Korean and English (default)
+            document.getElementById("firstLine").innerHTML = korName;
+            document.getElementById("secondLine").innerHTML = engName;
+            
+            //Shows the name in the selected language. The name in English disappears.
+            document.getElementById("showJap").onclick = function() {
+                document.getElementById("secondLine").innerHTML = japName;
+            }
+            document.getElementById("showSchn").onclick = function() {
+                document.getElementById("secondLine").innerHTML = schnName;
+            }
+            document.getElementById("showTchn").onclick = function() {
+                document.getElementById("secondLine").innerHTML = tchnName;
+            }
+            document.getElementById("showMean").onclick = function() {
+                document.getElementById("secondLine").innerHTML = meaning;
+            }
         }
     });
+    
     
 
 
