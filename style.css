@@ -4,6 +4,7 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: Arial;
+    background-color: black;
 }
 .nav {
     height: 5vw;
@@ -15,9 +16,9 @@ body {
     position: fixed;
     top: 0;
     left: 0px;
-    background-color: snow;
+    background-color: black;
 }
-.nav .logo img{
+.nav .logo img {
     top: 0;
     left: 10px;
     height: 5vw;
@@ -41,14 +42,14 @@ body {
     font-size: 5vw;
     color:white;
     letter-spacing: 0.2em;
-    margin-bottom: 0;
+    margin-bottom: 20;
 }
 .header .title p {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin-top: 20px;
+    margin-bottom: 100px;
     color: white;
     font-family:'Courier New';
-    font-size: 1vw;
+    font-size: 18px;
 }
 .header .title button {
     background: black;
@@ -70,6 +71,9 @@ textarea {
     width: 100%;
     padding: 5px;
     outline: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
 }
 label {
     line-height: 1.9rem;
@@ -79,12 +83,14 @@ label {
     width: 100%;
     justify-content: center;
     height: 300px;
-    margin-top: 300px;
     margin-bottom: 50px;
+    background: url(./image/input_bg.jpg);
+    background-size: cover;
 }
 .inputSec .card {
     position: absolute;
     flex: 1;
+    margin-top: 500px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -94,14 +100,17 @@ label {
 fieldset {
     width: 12vw;
     padding: 20px 40px;
-    background-color: rgba(251, 249, 249, 0.8);
+    background: black;
+    color: white;
+    border: 2px solid white;
 }
 #resultBox {
     padding: 20px 40px;
-    background-color: rgba(251, 249, 249, 0.8);
+    background: black;
+    color: white;
+    border: 2px solid white;
     vertical-align: middle;
     appearance: none;
-    border: max(2px, 0.1em) solid gray;
     width: 12vw;
     height: 3.5vw;
     text-align: center;
@@ -146,21 +155,28 @@ span {
     justify-content: center;
     align-items:flex-start;
     height: 200px;
+    margin-top: 500px;
 }
 .buttonSec button {
     width:150px;
     height:80px;
     text-align: center;
     justify-content: center;
-    border: 1px solid lightgray;
-    border-radius: 3px;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
     padding: 10px 30px;
     font-size: 14px;
-    font-family: Arial;
+    transition: .5s ease;
 }
 .buttonSec button:hover {
     transition: .5s ease;
-    border: 1px solid rgb(37, 37, 37);
-    color: rgb(56, 56, 56);
+    border: 2px solid gray;
+    background: black;
+    color: white;
+}
+.guideSec img {
+    width: 100%;
 }
 
