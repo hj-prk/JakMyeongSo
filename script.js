@@ -110,24 +110,23 @@ let firstLetter="null";
 let secondLetter="null";
 let surnameMade="null";
 
-var standard = false;
 
-
-    let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
-    let randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
-    let randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
-    let randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
-    let randMsNum = Math.floor(Math.random()*(msLength-0)+0);
 
     let genderval;
-
-    surnameMade = JSON.parse(surLines[randSurNum]);
 
     const form = document.getElementById("radioform");
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         genderval = document.querySelector('input[name="gender"]:checked').value;
+        
+        var standard = false;
+        let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
+        let randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
+        let randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
+        let randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
+        let randMsNum = Math.floor(Math.random()*(msLength-0)+0);
+        surnameMade = JSON.parse(surLines[randSurNum]);
 
         while(!standard) {
             if (genderval === "female") {
@@ -140,6 +139,7 @@ var standard = false;
                 secondLetter = JSON.parse(msLines[randMsNum]);
             }
 
+            //Checks if there is any duplicate letter
             if(surnameMade.eng != firstLetter.eng && surnameMade != secondLetter && firstLetter != secondLetter) {
                 standard = true;
             } else {
@@ -153,13 +153,6 @@ var standard = false;
             schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
             tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
             meaning = firstLetter.mean + " " + secondLetter.mean;
-
-            console.log(engName);
-            console.log(korName);
-            console.log(japName);
-            console.log(schnName);
-            console.log(tchnName);
-            console.log(meaning);
 
             //Shows the name generated in Korean and English (default)
             document.getElementById("firstLine").innerHTML = korName;
@@ -182,6 +175,14 @@ var standard = false;
                 document.getElementById("secondLine").innerHTML = meaning;
             }
         }
+
+        //console testing
+        console.log(engName);
+        console.log(korName);
+        console.log(japName);
+        console.log(schnName);
+        console.log(tchnName);
+        console.log(meaning);
     });
     
     
