@@ -197,7 +197,6 @@ const f_second = '{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn
 +'{"kor":"영", "eng":"Young", "jap":"ヨン", "schn":"瑛", "tchn":"瑛", "mean":"glow of the gem"}\n'
 +'{"kor":"영", "eng":"Young", "jap":"ヨン", "schn":"影", "tchn":"影", "mean":"shadow"}\n'
 +'{"kor":"영", "eng":"Young", "jap":"ヨン", "schn":"铃", "tchn":"鈴", "mean":"bell"}\n'
-+'{"kor":"안", "eng":"An", "jap":"アン", "schn":"岸", "tchn":"岸", "mean":"hill"}\n'
 +'{"kor":"희", "eng":"Hee", "jap":"ヒ", "schn":"喜", "tchn":"喜", "mean":"glad"}\n'
 +'{"kor":"희", "eng":"Hee", "jap":"ヒ", "schn":"牺", "tchn":"犧", "mean":"sacrifice"}\n'
 +'{"kor":"희", "eng":"Hee", "jap":"ヒ", "schn":"烯", "tchn":"烯", "mean":"glow"}\n'
