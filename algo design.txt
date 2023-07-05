@@ -1,15 +1,13 @@
 (Naming for variables are omitted or simplified)
 
 
-1.Takes information of gender from user.
-2. Generates three random integers. (n, m, & k)
-3. Takes information at nth, mth, and kth information from three json objects.
-4. Compares three letters. If any of them duplicates, takes another data.
-5. Combines three letters into one.
-6. Shows the result in Korean and English to the user.
-7. Asks the user if the user wants to see its meaning, translation in simplified/traditional Chinese or Japanese. 
-8. Shows the chosen information to user.
-9. Goes back to #1 when user clicks "Go Back" button. 
+-Takes information of gender from user.
+- Generates three random integers. (n, m, & k)
+- Takes information at nth, mth, and kth information from three json objects.
+- Combines three letters into one.
+- Shows the result in Korean and English to the user.
+- User clicks the language button (Japanese, simplified Chinese, or traditional Chinese) 
+- Shows the chosen information to user.
 
 
 

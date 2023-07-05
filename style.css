@@ -78,8 +78,9 @@ label {
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 400px;
+    height: 300px;
     margin-top: 300px;
+    margin-bottom: 50px;
 }
 .inputSec .card {
     position: absolute;

@@ -112,79 +112,78 @@ let surnameMade="null";
 
 
 
-    let genderval;
+let genderval;
 
-    const form = document.getElementById("radioform");
+const form = document.getElementById("radioform");
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        genderval = document.querySelector('input[name="gender"]:checked').value;
-        
-        var standard = false;
-        let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
-        let randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
-        let randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
-        let randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
-        let randMsNum = Math.floor(Math.random()*(msLength-0)+0);
-        surnameMade = JSON.parse(surLines[randSurNum]);
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    genderval = document.querySelector('input[name="gender"]:checked').value;
 
-        while(!standard) {
-            if (genderval === "female") {
-                console.log("Female");
-                firstLetter = JSON.parse(ffLines[randFfNum]);
-                secondLetter = JSON.parse(fsLines[randFsNum]);
-            } else {
-                console.log("Male");
-                firstLetter = JSON.parse(mfLines[randMfNum]);
-                secondLetter = JSON.parse(msLines[randMsNum]);
-            }
+    var standard = false;
 
-            //Checks if there is any duplicate letter
-            if(surnameMade.eng != firstLetter.eng && surnameMade != secondLetter && firstLetter != secondLetter) {
-                standard = true;
-            } else {
-                standard = false;
-            }
+    //Generates random numbers and pick up data at the location of chosen number.
+    let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
+    let randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
+    let randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
+    let randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
+    let randMsNum = Math.floor(Math.random()*(msLength-0)+0);
+    surnameMade = JSON.parse(surLines[randSurNum]);
 
-            //Combines letters
-            engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
-            korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
-            japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
-            schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
-            tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
-            meaning = firstLetter.mean + " " + secondLetter.mean;
-
-            //Shows the name generated in Korean and English (default)
-            document.getElementById("firstLine").innerHTML = korName;
-            document.getElementById("secondLine").innerHTML = engName;
-            
-            //Shows the name in the selected language. The name in English disappears.
-            document.getElementById("showEng").onclick = function() {
-                document.getElementById("secondLine").innerHTML = engName;
-            }
-            document.getElementById("showJap").onclick = function() {
-                document.getElementById("secondLine").innerHTML = japName;
-            }
-            document.getElementById("showSchn").onclick = function() {
-                document.getElementById("secondLine").innerHTML = schnName;
-            }
-            document.getElementById("showTchn").onclick = function() {
-                document.getElementById("secondLine").innerHTML = tchnName;
-            }
-            document.getElementById("showMean").onclick = function() {
-                document.getElementById("secondLine").innerHTML = meaning;
-            }
+        if (genderval === "female") {
+            console.log("Female");
+            firstLetter = JSON.parse(ffLines[randFfNum]);
+            secondLetter = JSON.parse(fsLines[randFsNum]);
+        } else {
+            console.log("Male");
+            firstLetter = JSON.parse(mfLines[randMfNum]);
+            secondLetter = JSON.parse(msLines[randMsNum]);
         }
 
-        //console testing
-        console.log(engName);
-        console.log(korName);
-        console.log(japName);
-        console.log(schnName);
-        console.log(tchnName);
-        console.log(meaning);
-    });
+        //Combines letters
+        //Makes space between each letter for English
+        engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
+        //No space between each letter for Korean 
+        korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
+        //No space, but a dot between the surname and given name
+        japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
+        //No space between each letter for Chinese
+        schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
+        tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
+        //Meaning of the name in English. Ignores grammar.
+        meaning = firstLetter.mean + " " + secondLetter.mean;
+
+        //Shows the name generated in Korean and English (default)
+        document.getElementById("firstLine").innerHTML = korName;
+        document.getElementById("secondLine").innerHTML = engName;
+        
+        //Shows the name in the selected language. The name in English disappears.
+        document.getElementById("showEng").onclick = function() {
+            document.getElementById("secondLine").innerHTML = engName;
+        }
+        document.getElementById("showJap").onclick = function() {
+            document.getElementById("secondLine").innerHTML = japName;
+        }
+        document.getElementById("showSchn").onclick = function() {
+            document.getElementById("secondLine").innerHTML = schnName;
+        }
+        document.getElementById("showTchn").onclick = function() {
+            document.getElementById("secondLine").innerHTML = tchnName;
+        }
+        document.getElementById("showMean").onclick = function() {
+            document.getElementById("secondLine").innerHTML = meaning;
+        }
     
+
+    //console testing
+    console.log(engName);
+    console.log(korName);
+    console.log(japName);
+    console.log(schnName);
+    console.log(tchnName);
+    console.log(meaning);
+});
+
     
 
 
