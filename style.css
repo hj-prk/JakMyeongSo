@@ -89,6 +89,22 @@ label {
     background: url(./image/input_bg.jpg);
     background-size: cover;
 }
+#transEng {
+    background-color: black;
+    color: white;
+}
+#transKor {
+    background-color: black;
+    color: white;
+}
+#transJap {
+    background-color: black;
+    color: white;
+}
+#transChn {
+    background-color: black;
+    color: white;
+}
 .inputSec .card {
     position: absolute;
     flex: 1;
