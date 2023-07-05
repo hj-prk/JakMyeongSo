@@ -24,32 +24,42 @@
             <div class="card"></div>
             <div class="card">
                 <div id="inputBox">
-                <form id="radioform">
-                    <fieldset>
-                        <legend>Jakmyeongso</legend>
-                        <div class="mainbox">
-                            <label for="gender"><strong>Gender</strong></label><br> 
-                        </div>
+                    <form id="radioform">
+                        <fieldset>
+                            <legend>Jakmyeongso</legend>
+                            <div class="mainbox">
+                                <label for="gender"><strong>Gender</strong></label><br> 
+                            </div>
 
-                        <div id="optionbox">
-                            <input type="radio" id="female" name="gender" value="female" /> Female
-                            <input type="radio" id="male" name="gender" value="male" /> Male
-                        </div> 
-                        <input type="submit" value="Get a name" class="submit-btn" />
-                    </fieldset>
-                </form>
-            </div><br>
-            <div id="resultBox">
-                <div id="nameKor">
-                    <h5></h5>
+                            <div id="optionbox">
+                                <input type="radio" id="female" name="gender" value="female" /> Female
+                                <input type="radio" id="male" name="gender" value="male" /> Male
+                            </div> 
+                            <input type="submit" value="Get a name" class="submit-btn" />
+                        </fieldset>
+                    </form>
+                </div><br>
+                <div id="resultBox">
+                    <div id="nameKor">
+                       <h5></h5>
+                    </div>
+                    <div id="nameEng">
+                        <h5></h5>
+                    </div>
                 </div>
-                <div id="nameEng">
-                    <h5></h5>
+                <div id="langbut">
+                    <button onclick="showJap()">日本語<br/>Japanese</button>
+                    <button onclick="showSchn()">中文(简体)<br/>Simplified Chinese</button>
+                    <button onclick="showTchn()">中文(繁体)<br/>Traditional Chinese</button>
+                    <button onclick="showMean()">Meaning</button>
                 </div>
-            </div>
             </div>
             
             <div class="card"></div>
+        </section>
+
+        <section>
+            
         </section>
 
         
