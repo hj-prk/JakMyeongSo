@@ -74,6 +74,63 @@ const surname = '{"kor":"김", "eng":"Kim", "jap":"キム", "schn":"金","tchn":
 +'{"kor":"이", "eng":"Lee", "jap":"イ", "schn":"李", "tchn":"李"}';
 
 const f_first = '{"kor":"수", "eng":"Soo", "jap":"ス", "schn":"秀", "tchn":"秀", "mean":"Outstanding"}\n'
++'{"kor":"윤", "eng":"Yun", "jap":"ユン", "schn":"阭", "tchn":"阭", "mean":"High"}\n'
++'{"kor":"윤", "eng":"Yun", "jap":"ユン", "schn":"赟", "tchn":"贇", "mean":"Pretty"}\n'
++'{"kor":"하", "eng":"Ha", "jap":"ハ", "schn":"沇", "tchn":"沇", "mean":"Flowing"}\n'
++'{"kor":"하", "eng":"Ha", "jap":"ハ", "schn":"霞", "tchn":"霞", "mean":"Sunset"}\n'
++'{"kor":"하", "eng":"Ha", "jap":"ハ", "schn":"抲", "tchn":"抲", "mean":"Leading"}\n'
++'{"kor":"민", "eng":"Min", "jap":"ミン", "schn":"暋", "tchn":"暋", "mean":"Strong"}\n'
++'{"kor":"서", "eng":"Seo", "jap":"ソ", "schn":"藇", "tchn":"藇", "mean":"Beautiful"}\n'
++'{"kor":"세", "eng":"Sae", "jap":"セ", "schn":"洒", "tchn":"洒", "mean":"Washing"}\n'
++'{"kor":"시", "eng":"Si", "jap":"シ", "schn":"时", "tchn":"時", "mean":"Time"}\n'
++'{"kor":"소", "eng":"So", "jap":"ソ", "schn":"小", "tchn":"小", "mean":"Little"}\n'
++'{"kor":"승", "eng":"Seung", "jap":"スン", "schn":"承", "tchn":"承", "mean":"Connecting"}\n'
++'{"kor":"설", "eng":"Seol", "jap":"ソル", "schn":"雪", "tchn":"雪", "mean":"Snow"}\n'
++'{"kor":"나", "eng":"Na", "jap":"ナ", "schn":"娜", "tchn":"娜", "mean":"Beautiful"}\n'
++'{"kor":"라", "eng":"Ra", "jap":"ラ", "schn":"蓏", "tchn":"蓏", "mean":"Berry"}\n'
++'{"kor":"리", "eng":"Ri", "jap":"リ", "schn":"悧", "tchn":"悧", "mean":"Clever"}\n'
++'{"kor":"아", "eng":"Ah", "jap":"ア", "schn":"雅", "tchn":"雅", "mean":"Clear"}\n' 
++'{"kor":"아", "eng":"Ah", "jap":"ア", "schn":"阿", "tchn":"阿", "mean":"Hill"}\n' 
++'{"kor":"아", "eng":"Ah", "jap":"ア", "schn":"阿", "tchn":"阿", "mean":"Hill"}\n'
++'{"kor":"아", "eng":"Ah", "jap":"ア", "schn":"猗", "tchn":"猗", "mean":"Gentle"}\n'
++'{"kor":"여", "eng":"Yeo", "jap":"ヨ", "schn":"与", "tchn":"與", "mean":"Together"}\n'
++'{"kor":"여", "eng":"Yeo", "jap":"ヨ", "schn":"丽", "tchn":"麗", "mean":"Lovely"}\n'
++'{"kor":"연", "eng":"Yeon", "jap":"ヨン", "schn":"缘", "tchn":"緣", "mean":"Tie"}\n'
++'{"kor":"연", "eng":"Yeon", "jap":"ヨン", "schn":"娫", "tchn":"娫", "mean":"Shinning"}\n'
++'{"kor":"연", "eng":"Yeon", "jap":"ヨン", "schn":"莲", "tchn":"蓮", "mean":"Lotus"}\n'
++'{"kor":"유", "eng":"Yoo", "jap":"ユ", "schn":"唯", "tchn":"唯", "mean":"Only"}\n'
++'{"kor":"유", "eng":"Yoo", "jap":"ユ", "schn":"留", "tchn":"留", "mean":"Staying"}\n'
++'{"kor":"유", "eng":"Yoo", "jap":"ユ", "schn":"柳", "tchn":"柳", "mean":"Willow"}\n'
++'{"kor":"은", "eng":"Eun", "jap":"ウン", "schn":"恩", "tchn":"恩", "mean":"Grace"}\n'
++'{"kor":"은", "eng":"Eun", "jap":"ウン", "schn":"银", "tchn":"銀", "mean":"Silver"}\n'
++'{"kor":"은", "eng":"Eun", "jap":"ウン", "schn":"訚", "tchn":"誾", "mean":"Mild"}\n'
++'{"kor":"세", "eng":"Sae", "jap":"セ", "schn":"𡜧", "tchn":"𡜧", "mean":"Quiet"}\n'
++'{"kor":"정", "eng":"Jeong",  "jap":"ジョン", "schn":"淨", "tchn":"净", "mean":"Clean"}';
++'{"kor":"정", "eng":"Jeong",  "jap":"ジョン", "schn":"正", "tchn":"正", "mean":"Right"}'
++'{"kor":"주", "eng":"Joo", "jap":"ジュ", "schn":"昼", "tchn":"晝", "mean":"Day"}\n'
++'{"kor":"주", "eng":"Joo", "jap":"ジュ", "schn":"柱", "tchn":"柱", "mean":"Pillar"}\n'
++'{"kor":"지", "eng":"Ji", "jap":"ジ", "schn":"智", "tchn":"智", "mean":"Wisdom"}\n'
++'{"kor":"지", "eng":"Ji", "jap":"ジ", "schn":"支", "tchn":"支", "mean":"Sustaining"}\n'
++'{"kor":"지", "eng":"Ji", "jap":"ジ", "schn":"持", "tchn":"持", "mean":"Having"}\n'
++'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"珍", "tchn":"珍", "mean":"Treasure"}\n'
++'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"Honest"}\n'
++'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"辰", "tchn":"辰", "mean":"Star"}\n'
++'{"kor":"채", "eng":"Chae", "jap":"チェ", "schn":"彩", "tchn":"彩", "mean":"Color"}\n'
++'{"kor":"채", "eng":"Chae", "jap":"チェ", "schn":"棌", "tchn":"棌", "mean":"Oak tree"}\n'
++'{"kor":"해", "eng":"Hae", "jap":"へ", "schn":"海", "tchn":"海", "mean":"Ocean"}\n'
++'{"kor":"해", "eng":"Hae", "jap":"へ", "schn":"祄", "tchn":"祄", "mean":"Helping"}\n'
++'{"kor":"태", "eng":"Tae", "jap":テ", "schn":"脫", "tchn":"脫", "mean":"Delighted"}\n'
++'{"kor":"현", "eng":"Hyun", "jap":"ヒョン", "schn":"炫", "tchn":"炫", "mean":"Bright"}\n'
++'{"kor":"현", "eng":"Hyun", "jap":"ヒョン", "schn":"昡", "tchn":"昡", "mean":"Sunshine"}\n'
++'{"kor":"현", "eng":"Hyun", "jap":"ヒョン", "schn":"玄", "tchn":"玄", "mean":"Black"}\n'
++'{"kor":"혜", "eng":"Hae", "jap":"へ", "schn":"慧", "tchn":"慧", "mean":"Wise"}\n'
++'{"kor":"혜", "eng":"Hae", "jap":"へ", "schn":"惠", "tchn":"惠", "mean":"Grace"}\n'
++'{"kor":"혜", "eng":"Hae", "jap":"へ", "schn":"憓", "tchn":"憓", "mean":"Loving"}\n'
++'{"kor":"혜", "eng":"Hae", "jap":"へ", "schn":"潓", "tchn":"潓", "mean":"Wave"}\n'
++'{"kor":"효", "eng":"Hyo", "jap":"ヒョ", "schn":"晓", "tchn":"曉", "mean":"Dawn"}\n'
++'{"kor":"희", "eng":"Hee", "jap":"ヒ", "schn":"喜", "tchn":"喜", "mean":Glad"}\n'
++'{"kor":"희", "eng":"Hee", "jap":"ヒ", "schn":"熙", "tchn":"熙", "mean":Splendid"}\n'
++'{"kor":"희", "eng":"Hee", "jap":"ヒ", "schn":"烯", "tchn":"烯", "mean":Glow"}\n'
 +'{"kor":"현", "eng":"Hyun", "jap":"ヒョン", "schn":"贤", "tchn":"賢", "mean":"Clever"}';
 
 const f_second = '{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"honest"}\n'
@@ -85,6 +142,8 @@ const m_first = '{"kor":"석", "eng":"Seok", "jap":"ソク", "schn":"石", "tchn
 const m_second = '{"kor":"주", "eng":"Joo", "jap":"ジュ", "schn":"柱", "tchn":"柱", "mean":"pillar"}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"honest"}';
 
+
+//Load guide images for selected language
 document.getElementById("transEng").onclick = function() {
     document.getElementById("guideImage").src = "./image/guide_eng.jpg";
 }
