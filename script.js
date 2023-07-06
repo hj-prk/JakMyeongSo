@@ -333,6 +333,7 @@ const fsLength = fsLines.length;
 const mfLength = mfLines.length;
 const msLength = msLines.length;
 
+
 let firstLetter="";
 let secondLetter="";
 let surnameMade="";
@@ -346,58 +347,65 @@ form.addEventListener("submit", (e) => {
 
     genderval = document.querySelector('input[name="gender"]:checked').value;
 
+  
     //Generates random numbers and pick up data at the location of chosen number.
-    let randSurNum = Math.floor(Math.random()*(surLength-0)+0);
-    let randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
-    let randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
-    let randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
-    let randMsNum = Math.floor(Math.random()*(msLength-0)+0);
+    var randSurNum = Math.floor(Math.random()*(surLength-0)+0);
+    var randFfNum = Math.floor(Math.random()*(ffLength-0)+0);
+    var randFsNum = Math.floor(Math.random()*(fsLength-0)+0);
+    var randMfNum = Math.floor(Math.random()*(mfLength-0)+0);
+    var randMsNum = Math.floor(Math.random()*(msLength-0)+0);
     surnameMade = JSON.parse(surLines[randSurNum]);
 
-        if (genderval === "female") {
-            console.log("Female");
-            firstLetter = JSON.parse(ffLines[randFfNum]);
-            secondLetter = JSON.parse(fsLines[randFsNum]);
-        } else {
-            console.log("Male");
-            firstLetter = JSON.parse(mfLines[randMfNum]);
-            secondLetter = JSON.parse(msLines[randMsNum]);
-        }
+    if(genderval === "female") {
+        console.log("Female");
+        firstLetter = JSON.parse(ffLines[randFfNum]);
+        secondLetter = JSON.parse(fsLines[randFsNum]);
+    } else {
+        console.log("Male");
+        firstLetter = JSON.parse(mfLines[randMfNum]);
+        secondLetter = JSON.parse(msLines[randMsNum]);
+    }
 
-        //Combines letters
-        //Makes space between each letter for English
-        engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
-        //No space between each letter for Korean 
-        korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
-        //No space, but a dot between the surname and given name
-        japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
-        //No space between each letter for Chinese
-        schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
-        tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
-        //Meaning of the name in English. Ignores grammar.
-        meaning = firstLetter.mean + " " + secondLetter.mean;
-
-        //Shows the name generated in Korean and English (default)
-        document.getElementById("firstLine").innerHTML = korName;
-        document.getElementById("secondLine").innerHTML = engName;
-        
-        //Shows the name in the selected language. The name in English disappears.
-        document.getElementById("showEng").onclick = function() {
-            document.getElementById("secondLine").innerHTML = engName;
-        }
-        document.getElementById("showJap").onclick = function() {
-            document.getElementById("secondLine").innerHTML = japName;
-        }
-        document.getElementById("showSchn").onclick = function() {
-            document.getElementById("secondLine").innerHTML = schnName;
-        }
-        document.getElementById("showTchn").onclick = function() {
-            document.getElementById("secondLine").innerHTML = tchnName;
-        }
-        document.getElementById("showMean").onclick = function() {
-            document.getElementById("secondLine").innerHTML = meaning;
-        }
+    if(surnameMade.eng != firstLetter.eng && firstLetter.eng != secondLetter.eng) {
+        looping = false;
+    }
     
+        
+    //Combines letters
+    //Makes space between each letter for English
+    engName = surnameMade.eng + " " + firstLetter.eng + " " + secondLetter.eng;
+    //No space between each letter for Korean 
+    korName = surnameMade.kor + firstLetter.kor + secondLetter.kor;
+    //No space, but a dot between the surname and given name
+    japName = surnameMade.jap + "・" + firstLetter.jap + secondLetter.jap;
+    //No space between each letter for Chinese
+    schnName = surnameMade.schn + firstLetter.schn + secondLetter.schn;
+    tchnName = surnameMade.tchn + firstLetter.tchn + secondLetter.tchn;
+    //Meaning of the name in English. Ignores grammar.
+    meaning = firstLetter.mean + " " + secondLetter.mean;
+
+
+    //Shows the name generated in Korean and English (default)
+    document.getElementById("firstLine").innerHTML = korName;
+    document.getElementById("secondLine").innerHTML = engName;
+    
+
+    //Shows the name in the selected language. The name in English disappears.
+    document.getElementById("showEng").onclick = function() {
+        document.getElementById("secondLine").innerHTML = engName;
+    }
+    document.getElementById("showJap").onclick = function() {
+        document.getElementById("secondLine").innerHTML = japName;
+    }
+    document.getElementById("showSchn").onclick = function() {
+        document.getElementById("secondLine").innerHTML = schnName;
+    }
+    document.getElementById("showTchn").onclick = function() {
+        document.getElementById("secondLine").innerHTML = tchnName;
+    }
+    document.getElementById("showMean").onclick = function() {
+        document.getElementById("secondLine").innerHTML = meaning;
+    }
 
     //console testing
     console.log(engName);
@@ -412,24 +420,4 @@ form.addEventListener("submit", (e) => {
     console.log("mfLength: " + mfLength);
     console.log("msLength: " + msLength); 
 });
-
-    
-
-
-
-
-
-/*
-Later to be used to use data from seperate .json file for further enhancement.
-
-$(document).ready(function(){
-    $.getJSON("letters.json", function(data){
-        console.log(data.surname);
-        console.log(data); 
-    }).fail(function(){
-        console.log("An error has occurred.");      
-    });
-});
-*/
-
 

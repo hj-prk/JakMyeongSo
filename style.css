@@ -187,7 +187,6 @@ span {
     cursor: pointer;
 }
 .buttonSec {
-    position: absolute;
     display: flex;
     width: 99%;
     justify-content: center;
@@ -215,5 +214,43 @@ span {
 }
 .guideSec img {
     width: 100%;
+}
+footer{
+    height: 100px;
+    position: relative;
+    transform: translateY(0%);
+    display: flex;
+    border-top: 1px solid #e4e4e4;
+    background-color:black;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+.footer-message {
+    font-weight: bold;
+    font-size:0.9rem;
+    color:#a9a9a9;
+    margin-bottom:0.3rem;
+    margin:0 0 0 0.6rem;
+}
+.footer-contact {
+    font-size:0.9rem;
+    color:#a9a9a9;
+    margin:0.6rem;
+}
+.footer-github {
+    font-size:0.9rem;
+    color:#a9a9a9;
+    margin:0.6rem;
+}
+.footer-copyright {
+    font-size:0.9rem;
+    color:#a9a9a9;
+    margin:0.6rem;
+}
+#wrapper {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 100px;
 }
 
