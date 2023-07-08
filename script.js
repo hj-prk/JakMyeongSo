@@ -315,6 +315,12 @@ document.getElementById("transJap").onclick = function() {
 document.getElementById("transChn").onclick = function() {
     document.getElementById("guideImage").src = "./image/guide_chn.jpg";
 }
+
+//Scroll button
+document.getElementById("startBut").onclick = function() {
+    window.scrollTo({top:2000, behavior:'smooth'});
+}
+
 var korName = "";
 var engName = "";
 var schnName = "";
