@@ -113,6 +113,9 @@ const surname = '{"kor":"김", "eng":"Kim", "jap":"キム", "schn":"金","tchn":
 +'{"kor":"이", "eng":"Lee", "jap":"イ", "schn":"李", "tchn":"李"}';
 
 const f_first = '{"kor":"수", "eng":"Soo", "jap":"ス", "schn":"秀", "tchn":"秀", "mean":"Outstanding"}\n'
++'{"kor":"", "eng":"", "jap":"", "schn":"", "tchn":"", "mean":""}\n'
++'{"kor":"", "eng":"", "jap":"", "schn":"", "tchn":"", "mean":""}\n'
++'{"kor":"", "eng":"", "jap":"", "schn":"", "tchn":"", "mean":""}\n'
 +'{"kor":"가", "eng":"Ga", "jap":"ガ", "schn":"可", "tchn":"可", "mean":"Right"}\n'
 +'{"kor":"가", "eng":"Ga", "jap":"ガ", "schn":"佳", "tchn":"佳", "mean":"Beautiful"}\n'
 +'{"kor":"다", "eng":"Da", "jap":"ダ", "schn":"多", "tchn":"多", "mean":"Many"}\n'
@@ -259,6 +262,9 @@ const f_second = '{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn
 +'{"kor":"정", "eng":"Jeong",  "jap":"ジョン", "schn":"汀", "tchn":"汀", "mean":"riverside"}';
 
 const m_first = '{"kor":"석", "eng":"Seok", "jap":"ソク", "schn":"石", "tchn":"石", "mean":"Stone"}\n'
++'{"kor":"", "eng":"", "jap":"", "schn":"", "tchn":"", "mean":""}\n'
++'{"kor":"", "eng":"", "jap":"", "schn":"", "tchn":"", "mean":""}\n'
++'{"kor":"", "eng":"", "jap":"", "schn":"", "tchn":"", "mean":""}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"进", "tchn":"進", "mean":"Advancing"}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn":"眞", "mean":"Honest"}\n'
 +'{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"昣", "tchn":"昣", "mean":"Bright"}\n'
