@@ -527,7 +527,7 @@ document.getElementById("transChn").onclick = function() {
 
 //Scroll button
 document.getElementById("startBut").onclick = function() {
-    window.scrollTo({top:2000, behavior:'smooth'});
+    window.scrollTo({top:1950, behavior:'smooth'});
 }
 
 var korName = "";
