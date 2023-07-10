@@ -15,6 +15,3 @@ JSON objects includes following data: A letter in Korean, its prnounciation in E
 
 Each of them includes same type of data. Each of them represents a surname and first and second letter of a name. 
 These data were designed based on understanding of the Korean naming system identifying suitable and natural-sounding letters for each position. 
-
-
-surname: 69
