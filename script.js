@@ -257,6 +257,7 @@ const f_second = '{"kor":"진", "eng":"Jin", "jap":"ジン", "schn":"真", "tchn
 +'{"kor":"은", "eng":"Eun", "jap":"ウン", "schn":"银", "tchn":"銀", "mean":"silver"}\n'
 +'{"kor":"애", "eng":"Ae", "jap":"エ", "schn":"爱", "tchn":"愛", "mean":"love"}\n'
 +'{"kor":"애", "eng":"Ae", "jap":"エ", "schn":"霭", "tchn":"靄", "mean":"haze"}\n'
++'{"kor":"우", "eng":"Woo", "jap":"ウ", "schn":"雨", "tchn":"雨", "mean":"rain"}\n'
 +'{"kor":"화", "eng":"Hwa", "jap":"ファ", "schn":"火", "tchn":"火", "mean":"fire"}\n'
 +'{"kor":"화", "eng":"Hwa", "jap":"ファ", "schn":"花", "tchn":"花", "mean":"flower"}\n'
 +'{"kor":"정", "eng":"Jeong",  "jap":"ジョン", "schn":"汀", "tchn":"汀", "mean":"riverside"}';
