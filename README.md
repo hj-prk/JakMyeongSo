@@ -6,7 +6,7 @@
 
 
 ## Get your own creative Korean name
-Whether you require a unique name for a Korean character in your story or desire a distinct Korean name for yourself, worry no more! Jakmyeongso, a Korean name generating webpage, enables users to acquire a name with just a few simple clicks.   
+Whether you require a unique name for a Korean character in your story or desire a distinct Korean name for yourself, worry no more! Jakmyeongso, a Korean name generating webpage, enables users to acquire a name with just a few simple clicks. Prepare to be amazed as over 1.2 million potential name outcomes await your discovery!
 ### Obtain a gender-appropriate name 
 Acquire a gender-appropriate name effortlessly by choosing either male or female and simply clicking 'Get a name'. Jakmyeongso's name generating system was meticulously crafted to produce natural-sounding names that perfectly align with the selected gender.
 ### Translate your name and discover its meaning
