@@ -623,6 +623,7 @@ form.addEventListener("submit", (e) => {
         document.getElementById("secondLine").innerHTML = meaning;
     }
 
+    /*
     //console testing
     console.log(engName);
     console.log(korName);
@@ -635,5 +636,6 @@ form.addEventListener("submit", (e) => {
     console.log("fsLength: " + fsLength);
     console.log("mfLength: " + mfLength);
     console.log("msLength: " + msLength); 
+    */
 });
 
