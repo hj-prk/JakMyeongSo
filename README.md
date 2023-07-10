@@ -13,3 +13,4 @@ Acquire a gender-appropriate name effortlessly by choosing either male or female
 Uncover the translation of your name and explore its profound meaning with Jakmyeongso. It supports five languages for names: Korean, English, Japanese, simplified Chinese, and traditional Chinese. Say goodbye to relying on unreliable translators for proper nouns. Additionally, each name is accompanied by its English meaning. Embark on a journey of creativity.
 
 ## Link
+[Jakmyeongso](https://hj-prk.github.io/jakmyeongso/)
